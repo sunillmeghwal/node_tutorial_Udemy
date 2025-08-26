@@ -4,6 +4,9 @@ const server = http.createServer(function (req, res) {
   const method = req.method;
   const path = req.url;
 
+  console.log("method is:- ",method)
+  console.log("path is :- ",path)
+
   const now = new Date();
   const timestamp = now.toLocaleString();
 
