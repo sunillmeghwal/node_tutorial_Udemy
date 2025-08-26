@@ -3,7 +3,11 @@ const fs = require("node:fs");
 const server = http.createServer(function (req, res) {
   const method = req.method;
   const path = req.url;
-  const log = `\n[${Date.now()}]:${method} ${path}`;
+
+  const now = new Date();
+  const timestamp = now.toLocaleString();
+
+  const log = `\n[${timestamp}]:${method} ${path}`;
   fs.appendFileSync("log.txt", log, "utf-8");
 
   switch (method) {
