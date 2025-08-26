@@ -1,4 +1,4 @@
-const http = require("node:http");
+const http = require("http");
 
 const server = http.createServer(function (req, res) {
   console.log("I got an incomming request");
