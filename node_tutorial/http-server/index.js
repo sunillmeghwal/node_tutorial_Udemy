@@ -3,7 +3,7 @@ const http = require("http");
 const server = http.createServer(function (req, res) {
   console.log("I got an incomming request");
 
-  //db..
+  //db.. 
 
   res.writeHead(200);
   res.end('Thanks for visting my server:)')
